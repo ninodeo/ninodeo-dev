@@ -2,7 +2,7 @@
 
 <template>
   <div>
-    <V1AppUtilityCmpt />
+    <V1AppUtilityNavCmpt />
     <V1AppHeaderCmpt />
     <slot />
     <V1AppFooterCmpt />

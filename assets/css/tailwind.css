@@ -1,3 +1,84 @@
+/* Import Font Style */
+@import url("https://fonts.googleapis.cm/css2?family=Montserrat:ital,wght@0,100;0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+
+/* Custom Variables */
+:root {
+  --custom-dark: #222831;
+  --custom-light: #ffffff;
+  --custom-primary: #eca72c;
+  --custom-secondary: #8b9467;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  * {
+    @apply p-0 m-0;
+  }
+  html {
+    font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
+  }
+  html, body{
+    @apply bg-light dark:bg-dark text-dark dark:text-light
+  }
+  body{
+    @apply bg-light dark:bg-dark text-dark dark:text-light
+  }
+  main {
+    @apply min-h-svh;
+  }
+}
+
+@layer components {
+  .defaultContainer {
+    @apply 2xl:container 2xl:mx-auto px-3 md:px-5 xl:px-10 2xl:px-0;
+  }
+
+  /* Custom Backgrounds Colors*/
+  .bg-primary{
+    @apply bg-[var(--custom-primary)]
+  }
+  .bg-secondary{
+    @apply bg-[var(--custom-secondary)]
+  }
+  .bg-light{
+    @apply bg-[var(--custom-light)]
+  }
+  .bg-dark{
+    @apply bg-[var(--custom-dark)]
+  }
+
+  /* Custom Text Colors */
+  .text-primary{
+    @apply text-[var(--custom-primary)]
+  }
+  .text-secondary{
+    @apply text-[var(--custom-secondary)]
+  }
+  .text-light{
+    @apply text-[var(--custom-light)]
+  }
+  .text-dark{
+    @apply text-[var(--custom-dark)]
+  }
+
+  /* Links */
+  .link{
+    @apply hover:opacity-65
+  }
+  .link-primary{
+    @apply text-primary
+  }
+  .link-secondary{
+    @apply text-secondary
+  }
+  .link-light{
+    @apply text-light
+  }
+  .link-dark{
+    @apply text-dark
+  }
+}

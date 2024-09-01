@@ -1,9 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div>
-    Page: index
-  </div>
+  <main>Main Body</main>
 </template>
 
 <style scoped></style>
