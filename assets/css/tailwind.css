@@ -17,18 +17,18 @@
   * {
     @apply p-0 m-0;
   }
+  html,body{
+    @apply bg-light dark:bg-dark text-dark dark:text-light transition-all ease-in-out duration-300
+  }
   html {
     font-family: "Montserrat", sans-serif;
     scroll-behavior: smooth;
   }
-  html, body{
-    @apply bg-light dark:bg-dark text-dark dark:text-light
-  }
   body{
-    @apply bg-light dark:bg-dark text-dark dark:text-light
+    @apply bg-default text-default
   }
   main {
-    @apply min-h-svh;
+    @apply min-h-screen z-0;
   }
 }
 
@@ -50,7 +50,9 @@
   .bg-dark{
     @apply bg-[var(--custom-dark)]
   }
-
+  .bg-default{
+    @apply bg-light dark:bg-dark
+  }
   /* Custom Text Colors */
   .text-primary{
     @apply text-[var(--custom-primary)]
@@ -63,6 +65,26 @@
   }
   .text-dark{
     @apply text-[var(--custom-dark)]
+  }
+  .text-default{
+    @apply text-dark dark:text-light
+  }
+
+  /* Buttons */
+  .btn{
+    @apply px-6 py-2 rounded-lg font-medium hover:shadow-md hover:font-semibold  focus:outline-none
+  }
+  .btn-primary{
+    @apply bg-primary text-dark
+  }
+  .btn-secondary{
+    @apply bg-secondary text-dark
+  }
+  .btn-light{
+    @apply bg-light text-dark
+  }
+  .btn-dark{
+    @apply bg-dark text-light
   }
 
   /* Links */
