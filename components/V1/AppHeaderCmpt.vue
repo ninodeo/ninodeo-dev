@@ -61,7 +61,7 @@
   <header class="lg:sticky lg:top-0 w-full z-50 hover:shadow-lg bg-default" :class="scrollPosition > scrollLimit ? 'shadow-lg' : ''">
     
     <!-- start of defaultContainer -->
-    <div class="defaultContainer flex justify-between items-center">
+    <div class="defaultContainer flex justify-between items-center xl:px-10">
       
       <!-- brand logo -->
       <NuxtLink to="/" id="brand" class="">

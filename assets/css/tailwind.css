@@ -27,8 +27,9 @@
   body{
     @apply bg-default text-default 
   }
-  main {
-    @apply min-h-screen z-0;
+
+  main{
+    @apply flex flex-col space-y-10 xl:space-y-16 z-0
   }
 }
 

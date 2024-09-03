@@ -1,9 +1,12 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+  var route = useRoute()
+  var postType = route.params['postType']
+</script>
 
 <template>
-  <div>
+  <main>
     Page: whats-new/[postType]/index
-  </div>
+  </main>
 </template>
 
 <style scoped></style>
