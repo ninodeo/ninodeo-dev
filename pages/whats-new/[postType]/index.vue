@@ -2,7 +2,7 @@
 
 <template>
   <div>
-    Page: /whats-new/[postType]
+    Page: whats-new/[postType]/index
   </div>
 </template>
 

@@ -15,17 +15,17 @@
 
 @layer base {
   * {
-    @apply p-0 m-0;
+    @apply p-0 m-0 transition-all ease-out
   }
   html,body{
-    @apply bg-light dark:bg-dark text-dark dark:text-light transition-all ease-in-out duration-300
+    @apply bg-light dark:bg-dark text-dark dark:text-light 
   }
   html {
     font-family: "Montserrat", sans-serif;
     scroll-behavior: smooth;
   }
   body{
-    @apply bg-default text-default
+    @apply bg-default text-default 
   }
   main {
     @apply min-h-screen z-0;
@@ -36,7 +36,9 @@
   .defaultContainer {
     @apply 2xl:container 2xl:mx-auto px-3 md:px-5 xl:px-10 2xl:px-0;
   }
-
+  .defaultTitle{
+      @apply font-bold text-[var(--custom-primary)]
+  }
   /* Custom Backgrounds Colors*/
   .bg-primary{
     @apply bg-[var(--custom-primary)]
@@ -72,7 +74,7 @@
 
   /* Buttons */
   .btn{
-    @apply px-6 py-2 rounded-lg font-medium hover:shadow-md hover:font-semibold  focus:outline-none
+    @apply font-semibold px-5 py-3 rounded-lg hover:shadow-md hover:font-semibold focus:outline-none
   }
   .btn-primary{
     @apply bg-primary text-dark
@@ -85,6 +87,10 @@
   }
   .btn-dark{
     @apply bg-dark text-light
+  }
+
+  .btn-outline-primary{
+    @apply bg-transparent border-2 border-[var(--custom-primary)] text-primary hover:bg-[var(--custom-primary)] hover:text-light hover:border-transparent
   }
 
   /* Links */
@@ -102,5 +108,30 @@
   }
   .link-dark{
     @apply text-dark
+  }
+
+  /* headers */
+  h1, .h1{
+    @apply text-4xl md:text-5xl lg:text-6xl
+  }
+  h2, .h2{
+    @apply text-3xl md:text-4xl lg:text-5xl
+  }
+  h3, .h3{
+    @apply text-2xl md:text-3xl lg:text-4xl
+  }
+  h4, .h4{
+    @apply text-xl md:text-2xl lg:text-3xl
+  }
+  h5, .h5{
+    @apply text-lg md:text-xl lg:text-2xl
+  }
+  h6, .h6{
+    @apply text-base md:text-lg lg:text-xl
+  }
+
+  /* Cards */
+  .card {
+    @apply shadow-lg bg-default rounded-md bg-default border
   }
 }

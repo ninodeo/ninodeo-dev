@@ -16,7 +16,7 @@
 </script>
 
 <template>
-  <nav class="fixed bottom-0 w-full md:static">
+  <nav class="fixed bottom-0 w-full md:static bg-default">
     <!-- start of defaultContainer -->
     <div class="defaultContainer flex justify-center items-center md:justify-between py-2 text-base">
       <!-- brand -->
