@@ -1,6 +1,4 @@
 <script setup lang="ts">
-  const colorMode = useColorMode()
-  const colorModeOpt = ['light', 'dark']
   const utilityItems = [
     {
       name: "FAQ's",
@@ -26,9 +24,7 @@
         <!-- loop of utilities -->
         <NuxtLink v-for="(utility, index) in utilityItems" :key="index" :to="utility.link" class="link link-dark dark:link-light">{{ utility.name }}</NuxtLink>
         <!-- color mode selector -->
-        <select v-model="colorMode.preference" class="capitalize">
-          <option v-for="(mode, index) in colorModeOpt" :key="index" :value="mode" >{{ mode }}</option>
-        </select>
+        <V1GlobalCmptsColorModePickerCmpt/>
         <!-- end of utility list -->
       </div>
       <!-- end of defaultContainer -->
