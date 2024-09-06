@@ -16,7 +16,7 @@ const props = defineProps({
             <h5 class="uppercase font-semibold text-sm">
             {{ category }}
             </h5>
-            <h1 class="font-bold defaultTitle xl:max-w-6xl">
+            <h1 class="font-bold defaultTitle xl:max-w-6xl capitalize">
               {{ title }}
             </h1>
           </div>

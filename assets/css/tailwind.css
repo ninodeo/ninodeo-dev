@@ -29,7 +29,7 @@
   }
 
   main{
-    @apply flex flex-col space-y-10 xl:space-y-16 z-0
+    @apply min-h-svh flex flex-col space-y-10 xl:space-y-16 z-0
   }
 }
 
