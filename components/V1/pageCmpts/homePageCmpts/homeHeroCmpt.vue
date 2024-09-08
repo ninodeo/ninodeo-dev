@@ -35,14 +35,14 @@ defineProps({
         
 
         <!-- start brief intro -->
-        <div class="flex flex-col gap-3">
+        <div class="flex flex-col gap-1">
           <h5
             class="font-bold defaultTitle">
               Brief Intro
           </h5>
           <!--render brief intro-->
           <div
-            class="flex flex-col space-y-3 lg:max-w-xl">
+            class="flex flex-col space-y-1 lg:max-w-xl">
             <h5
               v-for="(brief, idx) in props.intro"
               :key="idx">
@@ -53,21 +53,21 @@ defineProps({
         </div>
 
         <!--start of contact Section-->
-        <div class="flex flex-col gap-3">
+        <div class="flex flex-col gap-1">
           <h5
             class="defaultTitle">
               Contact Information
           </h5>
           <!--base of operation-->
-          <h4
+          <h5
             class="">
               {{ props.contactInfo.base }}
-          </h4>
+          </h5>
 
           <!--cta of contact-->
           <a
             :href="props.contactInfo.cta.link"
-            class="h4 link link-dark dark:link-light">
+            class="h5 link link-dark dark:link-light">
             {{ props.contactInfo.cta.text }}
           </a>
 

@@ -249,58 +249,52 @@ const pageData = {
       ]
     }
   ],
-  featuredWorks:{
-    h6: "Diverse Portfolio, Endless Possibilities",
-    h1:"Experience my versatility in action.",
-    h3:"Explore my work across various industries and how I adapt my skills to fit different needs.",
-    featuredWorks: [
-      {
-        workId: "001",
-        title: "Different Hunger Website Redesign",
-        slug:"",
-        services: [
-          "branding & identiy",
-          "ux & ui design",
-          "conversion Optimization"
-        ],
-        company: "testCompany",
-        cover: {
-          src: "",
-          alt: ""
-        }
-      },
-      {
-        workId: "002",
-        title: "Nuetrality Hunger Website Redesign",
-        slug:"",
-        services: [
-          "branding & identiy",
-          "ux & ui design",
-          "conversion Optimization"
-        ],
-        company: "testCompany",
-        cover: {
-          src: "",
-          alt: ""
-        }
-      },
-      {
-        workId: "003",
-        title: "Similarity Hunger Website Redesign",
-        slug:"",
-        services: [
-          "branding & identiy",
-          "ux & ui design",
-          "conversion Optimization"
-        ],
-        company: "testCompany",
-        cover: {
-          src: "",
-          alt: ""
-        }
-      },
-    ]
-  },
+  featuredWorks: [
+    {
+      workId: "001",
+      title: "Different Hunger Website Redesign",
+      slug:"",
+      services: [
+        "Branding & Identiy",
+        "UX & UI design",
+      ],
+      company: "Different Hunger Corporation",
+      cover: {
+        src: "",
+        alt: ""
+      }
+    },
+    {
+      workId: "002",
+      title: "Nuetrality Hunger Website Redesign",
+      slug:"",
+      services: [
+        "Branding & Identiy",
+        "UX & UI design",
+        "Conversion Optimization"
+      ],
+      company: "Nuetrality Company",
+      cover: {
+        src: "",
+        alt: ""
+      }
+    },
+    {
+      workId: "003",
+      title: "Similarity Hunger Website Redesign",
+      slug:"",
+      services: [
+        "Branding & Identiy",
+        "UX & UI design",
+        "Conversion Optimization"
+      ],
+      company: "National Website Organization",
+      cover: {
+        src: "",
+        alt: ""
+      }
+    },
+  ],
   featuredTestimonials:{
     h1: "Don't just take my word for it! Read reviews from my clients.",
     h3: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur praesentium natus sapiente commodi. Aliquid sunt tempore iste repellendus explicabo dignissimos placeat, autem harum dolore reprehenderit quis! Quo totam dignissimos earum.",
