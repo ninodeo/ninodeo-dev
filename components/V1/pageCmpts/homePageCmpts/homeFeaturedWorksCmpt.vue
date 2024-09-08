@@ -6,7 +6,11 @@ defineProps({
 
 <template>
   <section>
-    <div v-for="work in props.featuredWorks" :key="work.workId" class="min-h-svh relative even:bg-slate-500 odd:bg-slate-700 py-10">
+    <div
+      v-for="work in props.featuredWorks"
+      :key="work.workId"
+      class="min-h-svh relative even:bg-slate-500 odd:bg-slate-700 py-10">
+      
       <div class="defaultContainer relative">
         <!-- start of section head -->
         <div class="xl:max-w-4xl flex flex-col gap-3">

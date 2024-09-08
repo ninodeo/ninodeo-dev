@@ -1,7 +1,70 @@
 <script setup lang="ts">
 const pageData = {
   heroSection:{
-    
+    greeting: "Hey there, I'm",
+    name: "Niño Deo Dimaangay",
+    coverage: ["Designer", "Developer", "Support"],
+    intro: [
+      "An IT professional that will provide various IT services for you and your business.",
+      "IT Professional based in Philippines"
+    ],
+    contactInfo: {
+      base: "Cavite, Philippines",
+      cta:{
+        text: "hello@ninodeo.com",
+        link: "mailto:hello@ninodeo.com"
+      },
+      socialMedia: [
+        {
+          id: 1,
+          social: "Facebook",
+          icon: "",
+          link: ""
+        },
+        {
+          id: 2,
+          social: "LinkedIn",
+          icon: "",
+          link: ""
+        },
+        {
+          id: 3,
+          social: "Github",
+          icon: "",
+          link: ""
+        },
+        {
+          id: 4,
+          social: "Google",
+          icon: "",
+          link: ""
+        },
+        {
+          id: 5,
+          social: "Instagram",
+          icon: "",
+          link: ""
+        },
+      ],
+    },
+    otherInfo:[
+      {
+        key: "Projects Done",
+        value:"10"
+      }, 
+      {
+        key: "Years Experience",
+        value:"8"
+      }, 
+    ],
+    img:{
+      src: "",
+      alt: "alt text to image"
+    },
+    coverImage:{
+      src: "",
+      alt:""
+    }
   },
   aboutSection:{
     statement: "An IT professional that can provide various IT related products and services for you and your business.",

@@ -41,7 +41,7 @@ defineProps({
           <p class="col-span-5 lg:order-3 order-4 lg:col-span-8 ">{{ article.excerpt }}</p>
           
           <img
-            class="aspect-video lg:aspect-auto bg-slate-200 md:bg-red-500 col-span-5 lg:col-span-3 md:row-span-2 order-1 lg:order-4"
+            class="aspect-video lg:aspect-auto bg-slate-200 col-span-5 lg:col-span-3 md:row-span-2 order-1 lg:order-4"
             :src="article.featuredImg.src"
             :alt="article.featuredImg.alt"/>
         <!-- end of article section -->
