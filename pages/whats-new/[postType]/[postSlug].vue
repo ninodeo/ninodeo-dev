@@ -1,9 +1,9 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div>
+  <main>
     Page: whats-new/[postType]/[postSlug]
-  </div>
+  </main>
 </template>
 
 <style scoped></style>

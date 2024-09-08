@@ -16,11 +16,11 @@ const props = defineProps({
             <h5 class="uppercase font-semibold text-sm">
             {{ category }}
             </h5>
-            <h1 class="font-bold defaultTitle xl:max-w-6xl capitalize">
+            <h1 class="font-bold defaultTitle xl:max-w-4xl capitalize">
               {{ title }}
             </h1>
           </div>
-          <h6 v-if="excerpt" class="xl:max-w-4xl">
+          <h6 v-if="excerpt" class="xl:max-w-3xl">
             {{ excerpt }}
           </h6>
           <NuxtLink v-if="cta" :to="cta.link" class="" :class="cta.isButton ? 'btn btn-outline-primary' : 'link link-dark dark:link-light h3 font-bold hover:underline underline-offset-8'">

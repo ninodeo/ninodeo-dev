@@ -7,27 +7,21 @@ const cmptData= {
       label: "First Name *",
       name: "fname",
       placeholder: "Juan",
-      attr:[
-        "required"
-      ]
+      required: true
     },
     {
       type: "text",
       label: "Last Name *",
       name: "lname",
       placeholder: "Dela Cruz",
-      attr:[
-        "required"
-      ]
+      required: true
     },
     {
       type: "email",
       label: "Email Address *",
       name: "email",
       placeholder: "juandelacruz@email.com",
-      attr:[
-        "required"
-      ]
+      required: true
     },
     {
       type: "text",
@@ -40,18 +34,14 @@ const cmptData= {
       label: "Subject *",
       name: "subject",
       placeholder: "ex. Website Design",
-      attr:[
-        "required"
-      ]
+      required: true
     },
     {
       type: "textarea",
       label: "Message *",
       name: "message",
       placeholder: "Message Content",
-      attr:[
-        "required"
-      ]
+      required: true
     },
   ]
 
@@ -69,11 +59,13 @@ const cmptData= {
       <form
         action=""
         class="grid grid-cols-1 md:grid-cols-2 gap-5 xl:max-w-4xl">
+          
           <V1GlobalCmptsInputCmpt
             class="md:[&:nth-child(5)]:col-span-2 md:[&:nth-child(6)]:col-span-2"
-            v-for="(input, index) in cmptData.formData"
+            v-for="(field, index) in cmptData.formData"
             :key="index"
-            :props="input"/>
+            :props="field"/>
+
           <!--start of form footer-->
           <div id="formFooter" class="col-span-2 flex flex-col space-y-5">
             <!-- start of required checkbox -->

@@ -23,7 +23,7 @@ defineProps({
               <li v-for="(service, index) in work.services" :key="index" class="h6">{{ service }}</li>
             </ul>
 
-            <NuxtLink to="#" class="btn btn-outline-primary">
+            <NuxtLink :to="'/works/'+work.workId" class="btn btn-outline-primary">
               Learn More...
             </NuxtLink>
           </div>

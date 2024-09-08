@@ -1,9 +1,9 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div>
-    Page: /services/index
-  </div>
+  <main>
+    Service Page
+  </main>
 </template>
 
 <style scoped></style>
