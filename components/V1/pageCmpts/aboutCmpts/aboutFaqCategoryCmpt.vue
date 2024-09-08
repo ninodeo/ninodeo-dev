@@ -52,7 +52,7 @@ defineProps({
             </svg>
           </span>
         </summary>
-        <p id="answer" class="mt-4 leading-relaxed text-gray-700 bg-gray-100 p-3 py-5" v-html="faq.answer"></p>
+        <p id="answer" class="mt-4 leading-relaxed  rounded-md border-2 p-3 py-5" v-html="faq.answer"></p>
       </details>
     </div>
   </div>

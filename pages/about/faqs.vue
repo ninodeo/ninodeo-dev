@@ -5,6 +5,7 @@ const pageData= {
     h1:"Frequently Asked Questions",
     h5: "Quick answer to the questions that you may have. Can't find what you're looking for? Feel free to get in touch with me to discuss your ideas.",
     cta:{
+      isButton: true,
       text: "Get In Touch",
       link: "/contacts"
     },
@@ -231,6 +232,9 @@ const pageData= {
       </div>
 
     </section>
+
+    <V1PageCmptsAdsCmptsFooterAdsCmpt/>
+    
   </main>
 </template>
 

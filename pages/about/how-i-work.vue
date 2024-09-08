@@ -5,6 +5,7 @@ const pageData = {
     h1:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, expedita.",
     h5: "Through my experience working with diverse clients and industries, I've honed a workflow that prioritizes clear communication, collaboration, and achieving defined goals.",
     cta:{
+      isButton: true,
       text: "Get In Touch",
       link: "/contacts"
     },
@@ -247,8 +248,9 @@ const pageData = {
       :excerpt="pageData.heroSection.h5"
       :cta="pageData.heroSection.cta"
       :cover-image="pageData.heroSection.coverImage"/>
-      
+    <V1PageCmptsAboutCmptsAboutWorkStageOverviewCmpt :props="pageData.workProcess" />
     <V1PageCmptsAboutCmptsAboutWorkProcessCmpt v-for="stage in pageData.workProcess" :props="stage" :key="stage.id"/>
+    <V1PageCmptsAdsCmptsFooterAdsCmpt/>
   </main>
 </template>
 

@@ -23,7 +23,7 @@ const props = defineProps({
           <h6 v-if="excerpt" class="xl:max-w-4xl">
             {{ excerpt }}
           </h6>
-          <NuxtLink v-if="cta" :to="cta.link" class="btn btn-outline-primary">
+          <NuxtLink v-if="cta" :to="cta.link" class="" :class="cta.isButton ? 'btn btn-outline-primary' : 'link link-dark dark:link-light h3 font-bold hover:underline underline-offset-8'">
                 {{ cta.text }}
           </NuxtLink>
           <img 
