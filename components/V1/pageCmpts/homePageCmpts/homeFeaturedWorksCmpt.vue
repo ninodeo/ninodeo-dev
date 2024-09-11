@@ -1,4 +1,6 @@
 <script setup lang="ts">
+
+
 defineProps({
   props:Object
 })
@@ -6,15 +8,33 @@ defineProps({
 
 <template>
   <section class="relative">
-    
-    <div class="flex flex-row overflow-x-auto relative">
-        <div
-          v-for="work in props"
+      <Swiper
+      :modules="[SwiperAutoplay, SwiperEffectCreative, SwiperNavigation, SwiperPagination]"
+      :slides-per-view="1"
+      :pagination="{
+        type: 'progressbar'
+      }"
+      :loop="true"
+      :effect="'creative'"
+      :navigation="true"
+      :autoplay="{
+        delay: 5000,
+        disableOnInteraction: false,
+      }"
+      :creative-effect="{
+        prev: {
+          shadow: false,
+          translate: ['-20%', 0, -1],
+        },
+        next: {
+          translate: ['100%', 0, 0],
+        },
+      }">
+        <SwiperSlide v-for="work in props"
           :key="work.workId"
-          class="min-h-[90vh] min-w-[100vw] relative even:bg-slate-200 odd:bg-slate-300 dark:even:bg-slate-700 dark:odd:bg-slate-800">
+          class="even:bg-slate-200 odd:bg-slate-300 dark:even:bg-slate-700 dark:odd:bg-slate-800">
           
-          <div class="defaultContainer flex flex-col justify-center items-start h-full space-y-10">
-            
+          <div class="defaultContainer xl:px-10 flex flex-col justify-center items-start min-h-[90vh] space-y-10">
             <div class="flex flex-col space-y-5">
               <h4>{{ work.company }}</h4>
               <h1 class="defaultTitle xl:max-w-4xl">{{ work.title }}</h1>
@@ -27,9 +47,8 @@ defineProps({
               Learn More...
             </NuxtLink>
           </div>
-
-        </div>
-    </div>
+        </SwiperSlide>
+    </Swiper>
   </section>
 </template>
 
