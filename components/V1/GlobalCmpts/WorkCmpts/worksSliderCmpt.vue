@@ -1,8 +1,6 @@
 <script setup lang="ts">
-
-
 defineProps({
-  props:Object
+  props: Object
 })
 </script>
 

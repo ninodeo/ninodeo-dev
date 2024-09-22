@@ -1,7 +1,54 @@
 <script setup lang="ts">
-defineProps({
-  props: Object
-})
+const cmptData ={
+    h2: "Latest News & Updates",
+    articles: [
+      {
+        postID: 1,
+        title: "Dolor ea invidunt dolor accusam sea aliquip dolor voluptua et kasd diam et ea diam.",
+        excerpt:"Feugiat sea ipsum invidunt et clita est. Vel lorem ut commodo sed elitr euismod at duis elitr sadipscing accusam clita. Dolore nonummy stet accusam. Vero voluptua quis at nonumy. Clita et iusto sea magna ex. Vel facilisi sit aliquyam et ullamcorper dolores accusam commodo ea ipsum aliquam. Rebum eu tempor voluptua takimata eos sit commodo magna diam duo. Ea magna aliquyam gubergren sanctus dolores lorem vero duis. Et dolor dolor ullamcorper accusam lorem mazim facer. Amet est molestie dolore rebum erat eum sit ut dolores dolores et dolor sed blandit accumsan invidunt accusam aliquyam.",
+        slug:"sample-slug-here",
+        postType: "articles",
+        tags: [],
+        content:[],        
+        publishDate: "",
+        author: "Sample Author",
+        featuredImg:{
+          src:"",
+          alt:""
+        }
+      },
+      {
+        postID: 2,
+        title: "Dolor ea invidunt dolor accusam sea aliquip dolor voluptua et kasd diam et ea diam.",
+        excerpt:"Feugiat sea ipsum invidunt et clita est. Vel lorem ut commodo sed elitr euismod at duis elitr sadipscing accusam clita. Dolore nonummy stet accusam. Vero voluptua quis at nonumy. Clita et iusto sea magna ex. Vel facilisi sit aliquyam et ullamcorper dolores accusam commodo ea ipsum aliquam. Rebum eu tempor voluptua takimata eos sit commodo magna diam duo. Ea magna aliquyam gubergren sanctus dolores lorem vero duis. Et dolor dolor ullamcorper accusam lorem mazim facer. Amet est molestie dolore rebum erat eum sit ut dolores dolores et dolor sed blandit accumsan invidunt accusam aliquyam.",
+        slug:"sample-slug-here",
+        postType: "blogs",
+        tags: [],
+        content:[],        
+        publishDate: "",
+        author: "Sample Author",
+        featuredImg:{
+          src:"",
+          alt:""
+        }
+      },
+      {
+        postID: 3,
+        title: "Dolor ea invidunt dolor accusam sea aliquip dolor voluptua et kasd diam et ea diam.",
+        excerpt:"Feugiat sea ipsum invidunt et clita est. Vel lorem ut commodo sed elitr euismod at duis elitr sadipscing accusam clita. Dolore nonummy stet accusam. Vero voluptua quis at nonumy. Clita et iusto sea magna ex. Vel facilisi sit aliquyam et ullamcorper dolores accusam commodo ea ipsum aliquam. Rebum eu tempor voluptua takimata eos sit commodo magna diam duo. Ea magna aliquyam gubergren sanctus dolores lorem vero duis. Et dolor dolor ullamcorper accusam lorem mazim facer. Amet est molestie dolore rebum erat eum sit ut dolores dolores et dolor sed blandit accumsan invidunt accusam aliquyam.",
+        slug:"sample-slug-here",
+        postType: "articles",
+        tags: [],
+        content:[],        
+        publishDate: "",
+        author: "Sample Author",
+        featuredImg:{
+          src:"",
+          alt:""
+        }
+      }
+    ]
+}
 </script>
 
 <template>
@@ -11,7 +58,7 @@ defineProps({
       <!-- start of section head -->
       <div>
         <h2 class="defaultTitle font-semibold">
-          {{ props.h2 }}
+          {{ cmptData.h2 }}
         </h2>
         
         <!-- end of section head -->
@@ -20,33 +67,16 @@ defineProps({
       <!-- start of article list -->
       <div class="flex flex-col space-y-10">
         <!-- start of article section -->
-        <NuxtLink
-          v-for="article in props.articles"
-          :key="article.postID"
-          :to="'/whats-new/'+article.postType+'/'+article.slug"
-          class="grid lg:grid-flow-col grid-cols-5 lg:grid-cols-12 lg:row-span-2 gap-y-3 gap-x-5 xl:gap-x-8 hover:opacity-50 p-5 border-b last:border-none">
-          
-          <div
-            class="cols-span-1 lg:row-span-2 flex flex-col md:justify-center items-center p-5 rounded-md font-semibold order-2 lg:order-1">
-            <h1 class="defaultTitle ">31</h1>
-            <h6 class="uppercase">Month</h6>
-            <h6 class="uppercase">20XX</h6>
-          </div>
 
-          <div class="col-span-4 lg:col-span-8 defaultTitle flex items-center order-3 lg:order-2">
-            <h4 class="">{{ article.title }}</h4>
-          </div>
-          
-            
-          <p class="col-span-5 lg:order-3 order-4 lg:col-span-8 ">{{ article.excerpt }}</p>
-          
-          <img
-            class="aspect-video lg:aspect-auto bg-slate-200 col-span-5 lg:col-span-3 md:row-span-2 order-1 lg:order-4"
-            :src="article.featuredImg.src"
-            :alt="article.featuredImg.alt"/>
-        <!-- end of article section -->
-        </NuxtLink>
-        
+        <V1GlobalCmptsPostCmptsPostListItemCmptTemp1
+          v-for="article in cmptData.articles"
+          :key="article.postID"
+          :postType="article.postType"
+          :slug="article.slug"
+          :title="article.title"
+          :excerpt="article.excerpt"
+          :img="article.featuredImg"
+          />
         
       <!-- end of article list -->
       </div>

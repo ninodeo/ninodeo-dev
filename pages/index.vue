@@ -345,56 +345,6 @@ const pageData = {
         review:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sit rerum incidunt, a consequuntur recusandae ab saepe illo est quia obcaecati neque quibusdam eius accusamus error officiis atque voluptates magnam"
       },
     ],
-  },
-  latestNewsUpdates:{
-    h2: "Latest News & Updates",
-    articles: [
-      {
-        postID: 1,
-        title: "Dolor ea invidunt dolor accusam sea aliquip dolor voluptua et kasd diam et ea diam.",
-        excerpt:"Feugiat sea ipsum invidunt et clita est. Vel lorem ut commodo sed elitr euismod at duis elitr sadipscing accusam clita. Dolore nonummy stet accusam. Vero voluptua quis at nonumy. Clita et iusto sea magna ex. Vel facilisi sit aliquyam et ullamcorper dolores accusam commodo ea ipsum aliquam. Rebum eu tempor voluptua takimata eos sit commodo magna diam duo. Ea magna aliquyam gubergren sanctus dolores lorem vero duis. Et dolor dolor ullamcorper accusam lorem mazim facer. Amet est molestie dolore rebum erat eum sit ut dolores dolores et dolor sed blandit accumsan invidunt accusam aliquyam.",
-        slug:"sample-slug-here",
-        postType: "articles",
-        tags: [],
-        content:[],        
-        publishDate: "",
-        author: "Sample Author",
-        featuredImg:{
-          src:"",
-          alt:""
-        }
-      },
-      {
-        postID: 2,
-        title: "Dolor ea invidunt dolor accusam sea aliquip dolor voluptua et kasd diam et ea diam.",
-        excerpt:"Feugiat sea ipsum invidunt et clita est. Vel lorem ut commodo sed elitr euismod at duis elitr sadipscing accusam clita. Dolore nonummy stet accusam. Vero voluptua quis at nonumy. Clita et iusto sea magna ex. Vel facilisi sit aliquyam et ullamcorper dolores accusam commodo ea ipsum aliquam. Rebum eu tempor voluptua takimata eos sit commodo magna diam duo. Ea magna aliquyam gubergren sanctus dolores lorem vero duis. Et dolor dolor ullamcorper accusam lorem mazim facer. Amet est molestie dolore rebum erat eum sit ut dolores dolores et dolor sed blandit accumsan invidunt accusam aliquyam.",
-        slug:"sample-slug-here",
-        postType: "blogs",
-        tags: [],
-        content:[],        
-        publishDate: "",
-        author: "Sample Author",
-        featuredImg:{
-          src:"",
-          alt:""
-        }
-      },
-      {
-        postID: 3,
-        title: "Dolor ea invidunt dolor accusam sea aliquip dolor voluptua et kasd diam et ea diam.",
-        excerpt:"Feugiat sea ipsum invidunt et clita est. Vel lorem ut commodo sed elitr euismod at duis elitr sadipscing accusam clita. Dolore nonummy stet accusam. Vero voluptua quis at nonumy. Clita et iusto sea magna ex. Vel facilisi sit aliquyam et ullamcorper dolores accusam commodo ea ipsum aliquam. Rebum eu tempor voluptua takimata eos sit commodo magna diam duo. Ea magna aliquyam gubergren sanctus dolores lorem vero duis. Et dolor dolor ullamcorper accusam lorem mazim facer. Amet est molestie dolore rebum erat eum sit ut dolores dolores et dolor sed blandit accumsan invidunt accusam aliquyam.",
-        slug:"sample-slug-here",
-        postType: "articles",
-        tags: [],
-        content:[],        
-        publishDate: "",
-        author: "Sample Author",
-        featuredImg:{
-          src:"",
-          alt:""
-        }
-      }
-    ]
   }
 }
 </script>
@@ -405,9 +355,9 @@ const pageData = {
     <V1PageCmptsHomePageCmptsHomeAboutCmpt :props="pageData.aboutSection"/>
     <V1PageCmptsHomePageCmptsHomeValPropCmpt :props="pageData.valueProps"/>
     <V1PageCmptsHomePageCmptsHomeFeaturedServicesCmpt :props="pageData.featuredServices"/>
-    <V1PageCmptsHomePageCmptsHomeFeaturedWorksCmpt :props="pageData.featuredWorks"/>
+    <V1GlobalCmptsWorkCmptsWorksSliderCmpt :props="pageData.featuredWorks"/>
     <V1PageCmptsHomePageCmptsHomeFeaturedTestimonialsCmpt :props="pageData.featuredTestimonials"/>
-    <V1PageCmptsHomePageCmptsHomeFeaturedNewsUpdatesCmpt :props="pageData.latestNewsUpdates"/>
+    <V1PageCmptsHomePageCmptsHomeFeaturedNewsUpdatesCmpt/>
     <V1PageCmptsAdsCmptsFooterAdsCmpt/>
   </main>
 </template>
